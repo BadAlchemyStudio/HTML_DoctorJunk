@@ -48,6 +48,26 @@ body {
   background: white;
 }
 
+.media-div {
+  float: left;
+  left: 0.5rem;
+  height: inherit;
+  background: white;
+}
+
+#fb {
+  color: #db9ad2;
+}
+#snap {
+  color: #d2db9a;
+}
+#twit {
+  color: #a29adb;
+}
+#inst {
+  color: #dbbf9a;
+}
+
 .links-div a {
   color: black;
   padding: 1.75rem 1.5rem;
@@ -59,26 +79,100 @@ body {
   white-space: nowrap;
   margin-right: -4px;
   transition: background-color 200ms ease-in-out;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.links-div a:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+.media-div a {
+  padding: 1.25rem 1.5rem;
+  display: inline-block;
+  height: inherit;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: -4px;
+  transition: background-color 200ms ease-in-out;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.links-div #serv:hover {
+  background-color: #db9ad2;
+}
+.links-div #beaf:hover {
+  background-color: #d2db9a;
+}
+.links-div #abou:hover {
+  background-color: #a29adb;
+}
+.links-div #cont:hover {
+  background-color: #dbbf9a;
+}
+
+.media-div a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .ctaSection {
-  color: white;
-  background: url(/images/cta1.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/images/cta2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Titillium Web", sans-serif;
-  height: 35rem;
+  height: 90vh;
   z-index: 1;
 }
 
-.ctaSection h1 {
+.ctaContent {
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  padding-top: 20vh;
+}
+
+.ctaContent h1 {
+  color: white;
+  font-size: 7rem;
+  margin-bottom: 4rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ctaContent a {
+  padding: 1rem 3.2rem;
+  margin: 0 2rem;
+  text-decoration: none;
+  min-width: 3rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: #d2db9a;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  transition: 150ms ease-in-out;
+  border: rgba(255, 255, 255, 1) 1px solid;
+}
+
+.ctaContent a:hover {
+  background-color: #e4ecb5;
+  box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.15);
+}
+
+.ctaContent #ctaButton {
+  background-color: #db9ad2;
+  padding: 1rem 2rem;
+}
+
+.ctaContent #ctaButton:hover {
+  background-color: #eeb4e6;
+  box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.15);
 }
 
 .firstSection {
   background-color: #2a9d8f;
+  height: 100vh;
 }
