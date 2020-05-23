@@ -7,37 +7,54 @@ body {
   background-color: white;
 }
 .header {
-  z-index: 1;
-  height: 6.4rem;
-  background: linear-gradient(to top, white, rgb(197, 197, 197));
-  box-shadow: #000000 0px 3px 15px;
+  height: 5rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
+  z-index: 2;
+  position: relative;
 }
 
 .bgImgCenter {
-  display: inline-block;
+  position: absolute;
   background-image: url("/images/logo.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  width: 6rem;
-  height: 6rem;
-  margin-left: 0.5rem;
+  width: 8rem;
+  height: 8rem;
+  left: 50%;
+  margin-left: -4rem;
+  margin-top: 4rem;
+  z-index: 3;
+}
+
+.bgImgCenterBG {
+  position: absolute;
+  background: white;
+  background-size: cover;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  left: 50%;
+  margin-top: -3.5rem;
+  margin-left: -7rem;
+  box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.3);
+  z-index: -3;
 }
 
 .links-div {
   float: right;
   right: 0.5rem;
   height: inherit;
-  background: linear-gradient(to top, white, rgb(197, 197, 197));
+  background: white;
 }
 
 .links-div a {
   color: black;
-  padding: 2rem 3rem;
+  padding: 1.75rem 1.5rem;
   display: inline-block;
   height: inherit;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   white-space: nowrap;
   margin-right: -4px;
@@ -50,10 +67,16 @@ body {
 
 .ctaSection {
   color: white;
-  background-color: #e9c46a;
+  background: url(/images/cta1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Titillium Web", sans-serif;
-  height: 80vh;
+  height: 35rem;
   z-index: 1;
+}
+
+.ctaSection h1 {
 }
 
 .firstSection {
