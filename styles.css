@@ -56,20 +56,20 @@ body {
 }
 
 #fb {
-  color: #db9ad2;
+  color: rgba(141, 2, 255, 0.7);
 }
 #snap {
-  color: #d2db9a;
+  color: rgba(141, 2, 255, 0.7);
 }
 #twit {
-  color: #a29adb;
+  color: rgba(141, 2, 255, 0.7);
 }
 #inst {
-  color: #dbbf9a;
+  color: rgba(141, 2, 255, 0.7);
 }
 
 .links-div a {
-  color: black;
+  color: rgba(141, 2, 255, 0.7);
   padding: 1.75rem 1.5rem;
   display: inline-block;
   height: inherit;
@@ -95,19 +95,7 @@ body {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.links-div #serv:hover {
-  background-color: #db9ad2;
-}
-.links-div #beaf:hover {
-  background-color: #d2db9a;
-}
-.links-div #abou:hover {
-  background-color: #a29adb;
-}
-.links-div #cont:hover {
-  background-color: #dbbf9a;
-}
-
+.links-div a:hover,
 .media-div a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -118,7 +106,7 @@ body {
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0)
     ),
-    url("/images/cta2.jpg");
+    url("/images/cta4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,7 +138,6 @@ body {
   color: white;
   font-weight: 600;
   font-size: 1.5rem;
-  background-color: #d2db9a;
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   border-radius: 100px;
   transition: 150ms ease-in-out;
@@ -158,17 +145,7 @@ body {
 }
 
 .ctaContent a:hover {
-  background-color: #e4ecb5;
-  box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.15);
-}
-
-.ctaContent #ctaButton {
-  background-color: #db9ad2;
-  padding: 1rem 2rem;
-}
-
-.ctaContent #ctaButton:hover {
-  background-color: #eeb4e6;
+  background-color: rgba(141, 2, 255, 0.7);
   box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.15);
 }
 
