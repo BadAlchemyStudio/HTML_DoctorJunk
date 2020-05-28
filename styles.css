@@ -77,7 +77,7 @@ body {
   font-size: 1rem;
   text-decoration: none;
   white-space: nowrap;
-  margin-right: -4px;
+  margin-left: -4px;
   transition: background-color 200ms ease-in-out;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -102,16 +102,16 @@ body {
 
 .ctaSection {
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0)
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.1)
     ),
     url("/images/cta4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Titillium Web", sans-serif;
-  height: 90vh;
+  height: 92vh;
   z-index: 1;
 }
 
@@ -121,6 +121,7 @@ body {
   height: 50%;
   margin: 0 auto;
   padding-top: 20vh;
+  margin-bottom: 30vh;
 }
 
 .ctaContent h1 {
@@ -141,16 +142,199 @@ body {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   border-radius: 100px;
   transition: 150ms ease-in-out;
-  border: rgba(255, 255, 255, 1) 1px solid;
+  border: rgba(255, 255, 255, 1) 2px solid;
+  white-space: nowrap;
 }
-
 .ctaContent a:hover {
-  background-color: rgba(141, 2, 255, 0.7);
+  background-color: rgba(141, 2, 0255, 0.5);
   box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.15);
 }
 
 .firstSection {
-  background-color: #e4ecb5;
-  margin: 20px 20px;
-  height: 33vh;
+  background-color: white;
+  height: 33.5vh;
+  font-family: "Titillium Web", sans-serif;
+  padding: 0.2rem 0.2rem;
+  display: block;
+}
+
+.outerSection {
+  margin-top: -2px;
+  background-color: white;
+  height: 33.5vh;
+  font-family: "Titillium Web", sans-serif;
+  padding: 0.2rem 0.2rem;
+  display: block;
+}
+
+.secInner {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/images/sec2.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding-left: 6vw;
+  padding-top: 3vh;
+  display: inline-block;
+  color: white;
+}
+
+.secInnerMid {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/images/sec3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  padding-left: 50vw;
+  padding-top: 3vh;
+  display: inline-block;
+  color: white;
+}
+
+#bottomSec {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("/images/sec4.jpg");
+}
+
+.secInnerMid h1 {
+  font-size: 3rem;
+  max-width: 90%;
+}
+
+.secInnerMid p {
+  font-size: 1rem;
+  max-width: 90%;
+  margin-bottom: 2.5rem;
+}
+
+.secInnerMid a {
+  color: white;
+  text-decoration: none;
+  background: rgba(141, 2, 255, 0.8);
+  margin-top: 2rem;
+  padding: 1.25rem 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.secInner h1 {
+  font-size: 3rem;
+  max-width: 50%;
+}
+
+.secInner p {
+  font-size: 1rem;
+  max-width: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.secInner a {
+  color: white;
+  text-decoration: none;
+  background: rgba(141, 2, 255, 0.8);
+  margin-top: 2rem;
+  padding: 1.25rem 3rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1228px) {
+  .links-div {
+    background: white;
+    text-align: center;
+    margin: 0;
+  }
+
+  .links-div a {
+    color: rgba(141, 2, 255, 0.7);
+    margin: 0;
+    height: 1rem;
+    width: 24.36vw;
+    display: inline-block;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-bottom: 3rem;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-right: -4px;
+  }
+  .links-div a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .bgImgCenterBG {
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .bgImgCenter {
+    position: absolute;
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10rem;
+    height: 10rem;
+    left: 50%;
+    margin-left: -5rem;
+    margin-top: 4rem;
+    z-index: 3;
+    filter: brightness(0) invert(1);
+  }
+
+  .media-div {
+    opacity: 0;
+  }
+
+  .ctaContent {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 30vh;
+  }
+
+  .header {
+    height: 0rem;
+    background: rgba(0, 0, 0, 0);
+    z-index: 2;
+    position: relative;
+  }
+
+  .ctaContent h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .ctaContent a {
+    text-decoration: none;
+    min-width: 3rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    transition: 150ms ease-in-out;
+    border: rgba(255, 255, 255, 1) 2px solid;
+    white-space: nowrap;
+  }
+
+  #nonCtaButton {
+    display: none;
+  }
 }
