@@ -11,93 +11,98 @@ body {
   background: white;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
   z-index: 2;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
 }
 
-.bgImgCenter {
-  position: absolute;
-  background-image: url("/images/logo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 8rem;
-  height: 8rem;
-  left: 50%;
-  margin-left: -4rem;
-  margin-top: 4rem;
-  z-index: 3;
+.header a {
+  font-family: "Titillium Web", sans-serif;
+  color: rgba(141, 2, 255, 0.7);
+  text-decoration: none;
+  transition: background-color 200ms ease-in-out;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  align-items: center;
+  display: flex;
+  align-self: stretch;
+  text-align: center;
+  justify-content: space-evenly;
+  white-space: nowrap;
+  padding: 10px;
+  z-index: 2;
 }
 
-.bgImgCenterBG {
-  position: absolute;
-  background: white;
-  background-size: cover;
-  width: 14rem;
-  height: 14rem;
+#fb:hover,
+#snap:hover,
+#twit:hover,
+#inst:hover,
+#serv:hover,
+#beaf:hover,
+#abou:hover,
+#cont:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#bgImgCenter {
+  flex: 5;
+  text-decoration: underline;
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  cursor: default;
+}
+
+#bgImgCenter div {
   border-radius: 50%;
-  left: 50%;
-  margin-top: -3.5rem;
-  margin-left: -7rem;
-  box-shadow: 0px 10px 7px -6px rgba(0, 0, 0, 0.3);
-  z-index: -3;
+  background-color: white;
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
 }
 
-.links-div {
-  float: right;
-  right: 0.5rem;
-  height: inherit;
-  background: white;
-}
-
-.media-div {
-  float: left;
-  left: 0.5rem;
-  height: inherit;
-  background: white;
+#bgImgCenter div img {
+  height: 55%;
 }
 
 #fb {
   color: rgba(141, 2, 255, 0.7);
+  font-size: 2rem;
 }
 #snap {
   color: rgba(141, 2, 255, 0.7);
+  font-size: 2rem;
 }
 #twit {
   color: rgba(141, 2, 255, 0.7);
+  font-size: 2rem;
 }
 #inst {
   color: rgba(141, 2, 255, 0.7);
-}
-
-.links-div a {
-  color: rgba(141, 2, 255, 0.7);
-  padding: 1.75rem 1.5rem;
-  display: inline-block;
-  height: inherit;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  margin-left: -4px;
-  transition: background-color 200ms ease-in-out;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.media-div a {
-  padding: 1.25rem 1.5rem;
-  display: inline-block;
-  height: inherit;
-  font-family: "Titillium Web", sans-serif;
   font-size: 2rem;
-  text-decoration: none;
-  white-space: nowrap;
-  margin-right: -4px;
-  transition: background-color 200ms ease-in-out;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-
-.links-div a:hover,
-.media-div a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+#serv {
+  color: rgba(141, 2, 255, 0.7);
+  font-size: 1.3rem;
+}
+#beaf {
+  color: rgba(141, 2, 255, 0.7);
+  font-size: 1.3rem;
+}
+#abou {
+  color: rgba(141, 2, 255, 0.7);
+  font-size: 1.3rem;
+}
+#cont {
+  color: rgba(141, 2, 255, 0.7);
+  font-size: 1.3rem;
 }
 
 .ctaSection {
@@ -206,7 +211,7 @@ body {
 
 #bottomSec {
   background-image: linear-gradient(
-      to left,
+      to right,
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.3)
     ),
@@ -254,52 +259,7 @@ body {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1228px) {
-  .links-div {
-    background: white;
-    text-align: center;
-    margin: 0;
-  }
-
-  .links-div a {
-    color: rgba(141, 2, 255, 0.7);
-    margin: 0;
-    height: 1rem;
-    width: 24.36vw;
-    display: inline-block;
-    background: rgba(255, 255, 255, 1);
-    text-align: center;
-    padding-bottom: 3rem;
-    text-decoration: none;
-    white-space: nowrap;
-    margin-right: -4px;
-  }
-  .links-div a:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  .bgImgCenterBG {
-    margin-top: 2rem;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .bgImgCenter {
-    position: absolute;
-    background-image: url("/images/logo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 10rem;
-    height: 10rem;
-    left: 50%;
-    margin-left: -5rem;
-    margin-top: 4rem;
-    z-index: 3;
-    filter: brightness(0) invert(1);
-  }
-
-  .media-div {
-    opacity: 0;
-  }
-
+@media screen and (max-width: 1232px) {
   .ctaContent {
     text-align: center;
     width: 50%;
@@ -307,15 +267,57 @@ body {
     margin: 0 auto;
     padding-top: 30vh;
   }
-
   .header {
-    height: 0rem;
-    background: rgba(0, 0, 0, 0);
+    height: 5rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     z-index: 2;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
   }
 
-  .ctaContent h1 {
+  .header a {
+    font-family: "Titillium Web", sans-serif;
+    color: rgba(141, 2, 255, 0.7);
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    align-items: center;
+    display: flex;
+    align-self: stretch;
+    text-align: center;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    padding: 10px;
+    z-index: 2;
+  }
+  #bgImgCenter {
+    display: none;
+  }
+  #bgImgCenter div {
+    border-radius: 50%;
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+  }
+
+  #bgImgCenter div img {
+    height: 55%;
+  }
+
+  #nonCtaButton {
+    display: none;
+  }
+
+  /* .ctaContent h1 {
     color: white;
     font-size: 3rem;
     margin-bottom: 4rem;
@@ -333,8 +335,97 @@ body {
     border: rgba(255, 255, 255, 1) 2px solid;
     white-space: nowrap;
   }
+ */
+}
+
+@media screen and (max-width: 604px) {
+  .ctaContent {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding-top: 30vh;
+  }
+  .header {
+    height: 5rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header a {
+    font-family: "Titillium Web", sans-serif;
+    color: rgba(141, 2, 255, 0.7);
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    align-items: center;
+    display: flex;
+    align-self: stretch;
+    text-align: center;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    padding: 10px;
+    z-index: 2;
+  }
+  #bgImgCenter {
+    display: none;
+  }
+  #bgImgCenter div {
+    border-radius: 50%;
+    background-color: white;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+  }
+
+  #bgImgCenter div img {
+    height: 55%;
+  }
 
   #nonCtaButton {
     display: none;
   }
+
+  #fb {
+    display: none;
+  }
+  #snap {
+    display: none;
+  }
+  #twit {
+    display: none;
+  }
+  #inst {
+    display: none;
+  }
+
+  /* .ctaContent h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .ctaContent a {
+    text-decoration: none;
+    min-width: 3rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    transition: 150ms ease-in-out;
+    border: rgba(255, 255, 255, 1) 2px solid;
+    white-space: nowrap;
+  }
+ */
 }
