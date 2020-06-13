@@ -353,6 +353,142 @@ body {
 
 /* General Media Queries */
 
+/* Laptop dimensions */
+
+@media screen and (max-width: 1370px) {
+  .ctaContent {
+    text-align: center;
+    padding-top: 6vh;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+
+  #ctaHeading {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 4em;
+  }
+
+  #ctaButtons {
+    display: flex;
+    flex-direction: row;
+  }
+  .header {
+    height: 5rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    flex-basis: auto;
+  }
+
+  .header a {
+    font-family: "Titillium Web", sans-serif;
+    color: rgba(141, 2, 255, 0.7);
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    align-items: center;
+    display: flex;
+    align-self: stretch;
+    text-align: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    z-index: 2;
+    font-size: 0.8em;
+  }
+
+  .ctaContent h1 {
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .ctaContent a {
+    padding: 1rem 3.2rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    transition: 150ms ease-in-out;
+    border: rgba(255, 255, 255, 1) 2px solid;
+    white-space: nowrap;
+  }
+
+  .flexSecContent h1 {
+    font-size: 2rem;
+    flex: 1;
+  }
+
+  .flexSecContent p {
+    font-size: 0.8rem;
+    max-width: 90%;
+    margin-bottom: 2.5rem;
+    flex: 1;
+  }
+
+  .flexSecContent a {
+    color: white;
+    text-decoration: none;
+    background: rgba(141, 2, 255, 0.8);
+    margin-top: 2rem;
+    padding: 0.6rem 2.75rem;
+    font-size: 1.2rem;
+    text-align: center;
+    flex: 1;
+    white-space: nowrap;
+    transition: 100ms ease-in-out;
+  }
+
+  .servicesMain {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    padding-top: 15vh;
+    background: rgb(22, 22, 22);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .servicesSec {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .servicesSec div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 20px;
+    background: rgba(141, 2, 255, 1);
+    border: rgba(141, 2, 255, 1) 2px solid;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 1rem 3rem;
+  }
+}
+
 @media screen and (max-width: 1232px) {
   .ctaContent {
     text-align: center;
@@ -379,6 +515,7 @@ body {
     padding-top: 4rem;
     display: flex;
     flex-direction: row;
+    font-size: 4em;
   }
 
   #ctaButtons {
