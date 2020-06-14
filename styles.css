@@ -142,6 +142,10 @@ body {
   display: none;
 }
 
+#m_insideLogo img {
+  display: none;
+}
+
 #ctaHeading {
   display: flex;
   flex-direction: row;
@@ -322,8 +326,12 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100vh;
-  padding-top: 15vh;
-  background: rgb(35, 35, 35);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/images/servicesbg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -336,19 +344,66 @@ body {
   flex-wrap: nowrap;
   height: 50vh;
   align-items: center;
-  justify-content: space-evenly;
+  align-content: space-around;
+  justify-content: center;
 }
 
-.servicesSec div {
+.secWrapper {
   display: flex;
+  flex-basis: auto;
+  margin: auto 6rem;
+  align-self: center;
+}
+
+.serviceColumn {
+  display: flex;
+  flex: 1;
   flex-direction: column;
-  text-align: center;
-  flex-basis: 20px;
-  background: rgba(104, 104, 104, 0.4);
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(255, 255, 255, 0.3); */
+}
+
+.secTopImg {
+  background: rgba(255, 255, 255, 1);
   border: rgba(141, 2, 255, 1) 2px solid;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  outline-offset: -30px;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: -5rem;
+  z-index: 5;
+}
+
+.secTopImg h1 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.secContent {
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+  flex-direction: column;
+  flex-basis: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: rgba(141, 2, 255, 1) 2px solid;
+  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
   color: white;
   padding: 3rem 5rem;
+}
+
+.secContent h2 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 3em;
+  text-align: center;
+}
+
+.secContent ul {
+  font-size: 1em;
 }
 
 /* General Media Queries */
@@ -461,7 +516,6 @@ body {
     flex-wrap: nowrap;
     height: 100vh;
     padding-top: 15vh;
-    background: rgb(22, 22, 22);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -472,20 +526,66 @@ body {
     flex: 1;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    height: 50vh;
+    align-content: center;
     justify-content: space-evenly;
   }
 
-  .servicesSec div {
+  .secWrapper {
     display: flex;
+    flex: 1;
+    /* margin: auto 1rem; */
+  }
+
+  .serviceColumn {
+    display: flex;
+    flex: 1;
     flex-direction: column;
-    text-align: center;
-    flex-basis: 20px;
-    background: rgba(141, 2, 255, 1);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255, 255, 255, 0.3); */
+  }
+
+  .secTopImg {
+    background: rgba(255, 255, 255, 1);
     border: rgba(141, 2, 255, 1) 2px solid;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    outline-offset: -30px;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: -5rem;
+    z-index: 5;
+  }
+
+  .secTopImg h1 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .secContent {
+    display: flex;
+    font-family: "Titillium Web", sans-serif;
+    flex-direction: column;
+    flex-basis: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: rgba(141, 2, 255, 1) 2px solid;
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
     color: white;
-    padding: 1rem 3rem;
+    padding: 3rem 5rem;
+  }
+
+  .secContent h2 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .secContent ul {
+    font-size: 1em;
   }
 }
 
@@ -503,16 +603,28 @@ body {
 
   #insideLogo {
     display: flex;
-    background: white;
     border-radius: 50%;
+    border-bottom: white 3px solid;
   }
 
   #insideLogo img {
-    transform: scale(0.6, 0.6);
+    display: none;
+  }
+
+  #m_insideLogo img {
+    display: flex;
+    transform: scale(0.7, 0.7);
+    filter: invert(1);
+  }
+
+  #m_insideLogo {
+    display: flex;
+    border-radius: 50%;
+    border-bottom: white 3px solid;
   }
 
   #ctaHeading {
-    padding-top: 4rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     font-size: 4em;
@@ -604,7 +716,7 @@ body {
 
   #insideLogo {
     display: flex;
-    background: white;
+    background: red;
     border-radius: 50%;
   }
 
