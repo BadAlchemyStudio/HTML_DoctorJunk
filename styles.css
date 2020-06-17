@@ -325,11 +325,11 @@ body {
   flex: 1;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 100vh;
+  height: 110vh;
   background-image: linear-gradient(
-      to top,
+      to bottom,
       rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.4)
     ),
     url("/images/servicesbg.jpg");
   background-size: cover;
@@ -339,30 +339,19 @@ body {
 
 .servicesSec {
   display: flex;
-  flex: 1;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 50vh;
   align-items: center;
-  align-content: space-around;
-  justify-content: center;
-}
-
-.secWrapper {
-  display: flex;
-  flex-basis: auto;
-  margin: auto 6rem;
-  align-self: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
 }
 
 .serviceColumn {
   display: flex;
-  flex: 1;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  /* background: rgba(255, 255, 255, 0.3); */
 }
 
 .secTopImg {
@@ -370,15 +359,15 @@ body {
   border: rgba(141, 2, 255, 1) 2px solid;
   outline-offset: -30px;
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  margin-bottom: -5rem;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: -4rem;
   z-index: 5;
 }
 
 .secTopImg h1 {
   color: rgba(0, 0, 0, 1);
-  font-size: 6rem;
+  font-size: 4rem;
   text-align: center;
   padding-top: 2rem;
 }
@@ -387,23 +376,140 @@ body {
   display: flex;
   font-family: "Titillium Web", sans-serif;
   flex-direction: column;
-  flex-basis: 20px;
   background: rgba(255, 255, 255, 0.2);
   border: rgba(141, 2, 255, 1) 2px solid;
-  box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 1);
   color: white;
-  padding: 3rem 5rem;
+  padding: 3rem 1rem;
 }
 
 .secContent h2 {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   font-size: 3em;
   text-align: center;
+  text-shadow: 0px 1px 3px black;
 }
 
 .secContent ul {
+  padding-left: 1rem;
   font-size: 1em;
+  max-width: 100%;
+  text-shadow: 0px 1px 3px black;
+}
+
+.servicesButton {
+  display: flex;
+  margin-top: 8vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesButton a {
+  padding: 2rem 5rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  background: rgba(141, 2, 255, 0.432);
+  box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.3);
+  transition: 100ms ease-in-out;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.servicesButton a:hover {
+  font-size: 2.1rem;
+  background: rgba(152, 27, 255, 0.479);
+  box-shadow: 0px 0px 24px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Contact Section */
+
+.contactSection {
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-left: 25%;
+  padding-right: 25%;
+  height: 110vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/images/servicesbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.contactBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  /* background: green; */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contactMain {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contactForms {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  /* background: red; */
+  flex: 8;
+}
+
+.nameSecs {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.firstNameSec {
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.lastNameSec {
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  /* background: blue; */
+  flex: 4;
 }
 
 /* General Media Queries */
@@ -534,7 +640,6 @@ body {
   .secWrapper {
     display: flex;
     flex: 1;
-    /* margin: auto 1rem; */
   }
 
   .serviceColumn {
